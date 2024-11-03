@@ -363,7 +363,7 @@ namespace OpenAI
     {
         public const string Text = "text";
         public const string JsonObject = "json_object";
-        public const string JsonSchema - "json_schema"
+        public const string JsonSchema = "json_schema";
     }
 
     public static class ImageSize
