@@ -110,6 +110,7 @@ namespace OpenAI
     {
         public string Name { get; set; }
         public object Schema { get; set; }
+        public bool Strict { get; set; } = true;
     }
 
     public struct CreateChatCompletionResponse : IResponse
