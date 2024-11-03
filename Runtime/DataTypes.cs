@@ -103,7 +103,13 @@ namespace OpenAI
     public class ResponseFormat
     {
         public string Type { get; set; } = ResponseType.Text;
-        public object JsonSchema { get; set; }
+        public ResponseSchema JsonSchema { get; set; }
+    }
+
+    public class ResponseSchema
+    {
+        public string Name { get; set; };
+        public object Schema { get; set; }
     }
 
     public struct CreateChatCompletionResponse : IResponse
