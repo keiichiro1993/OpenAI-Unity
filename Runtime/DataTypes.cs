@@ -108,7 +108,7 @@ namespace OpenAI
 
     public class ResponseSchema
     {
-        public string Name { get; set; };
+        public string Name { get; set; }
         public object Schema { get; set; }
     }
 
