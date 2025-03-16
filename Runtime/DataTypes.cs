@@ -143,7 +143,7 @@ namespace OpenAI
 
     public struct Content
     {
-        public PromptContentType Type { get; set; }
+        public string Type { get; set; } = PromptContentType.Text;
         public string Text { get; set; }
         public ImageUrl ImageUrl { get; set; }
     }
