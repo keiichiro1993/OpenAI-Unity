@@ -138,7 +138,7 @@ namespace OpenAI
     public class ChatMessage
     {
         public string Role { get; set; }
-        public Content Content { get; set; }
+        public List<Content> Content { get; set; }
     }
 
     public class Content
