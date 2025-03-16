@@ -135,13 +135,13 @@ namespace OpenAI
         public string Logprobs { get; set; }
     }
 
-    public struct ChatMessage
+    public class ChatMessage
     {
         public string Role { get; set; }
-        public string Content { get; set; }
+        public Content Content { get; set; }
     }
 
-    public struct Content
+    public class Content
     {
         public string Type { get; set; } = PromptContentType.Text;
         public string Text { get; set; }
