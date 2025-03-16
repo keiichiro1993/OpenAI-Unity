@@ -141,6 +141,18 @@ namespace OpenAI
         public string Content { get; set; }
     }
 
+    public struct Content
+    {
+        public PromptContentType Type { get; set; }
+        public string Text { get; set; }
+        public ImageUrl ImageUrl { get; set; }
+    }
+
+    public struct ImageUrl
+    {
+        public string Url { get; set; }
+    }
+
     #endregion
 
     #region Audio Transcriptions Data Types
@@ -364,6 +376,12 @@ namespace OpenAI
     {
         public const string MultipartFormData = "multipart/form-data";
         public const string ApplicationJson = "application/json";
+    }
+
+    public static class PromptContentType
+    {
+        public const string Text = "text";
+        public const string ImageUrl = "image_url";
     }
 
     public static class ResponseType
